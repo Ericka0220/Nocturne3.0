@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Archive | NOCTURNE</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body data-page="archive">
+
+    <header class="site-header">
+        <a href="../../index.html" class="logo">
+            ✧ NOCTURNE
+            <small>THE VEIL NETWORK</small>
+        </a>
+
+        <nav class="main-navigation">
+            <a href="../../index.html">Gateway</a>
+            <a href="archive.html">The Archive</a>
+            <a href="../realm/realm.html">The Realm</a>
+            <a href="../unwritten/unwritten.html">The Unwritten</a>
+        </nav>
+    </header>
+
+    <main class="page-container">
+
+<!-- ARCHIVE FILTER CONTROLS -->
+
+<section class="archive-filter-panel">
+
+  <p class="section-label">
+    ARCHIVE INDEX CONTROLS
+  </p>
+
+  <h2>Refine Your Search</h2>
+
+  <div class="archive-filter-grid">
+
+    <div class="filter-field">
+
+      <label for="archiveCategory">
+        RECORD CATEGORY
+      </label>
+
+      <select
+        id="archiveCategory"
+        data-archive-category
+      >
+
+        <option value="all">All Categories</option>
+        <option value="entity">Entities</option>
+        <option value="artifact">Artifacts</option>
+        <option value="phenomenon">Phenomena</option>
+        <option value="location">Locations</option>
+        <option value="case">Case Files</option>
+        <option value="historical">Historical Records</option>
+
+      </select>
+
+    </div>
+
+
+    <div class="filter-field">
+
+      <label for="archiveStatus">
+        CLASSIFICATION
+      </label>
+
+      <select
+        id="archiveStatus"
+        data-archive-status
+      >
+
+        <option value="all">All Classifications</option>
+        <option value="verified">Verified</option>
+        <option value="unconfirmed">Unconfirmed</option>
+        <option value="legendary">Legendary</option>
+        <option value="disputed">Disputed</option>
+        <option value="unresolved">Unresolved</option>
+
+      </select>
+
+    </div>
+
+
+    <div class="filter-field">
+
+      <label for="archiveSort">
+        SORT RECORDS
+      </label>
+
+      <select
+        id="archiveSort"
+        data-archive-sort
+      >
+
+        <option value="default">Original Order</option>
+        <option value="alphabetical">A to Z</option>
+        <option value="reverse">Z to A</option>
+        <option value="status">By Classification</option>
+
+      </select>
+
+    </div>
+
+  </div>
+
+
+  <div class="filter-field archive-search-field">
+
+    <label for="archiveKeyword">
+      KEYWORD SEARCH
+    </label>
+
+    <input
+      type="search"
+      id="archiveKeyword"
+      data-archive-search
+      placeholder="Search titles, descriptions, or keywords..."
+    >
+
+  </div>
+
+
+  <div class="archive-filter-footer">
+
+    <p data-archive-count>
+      Records displayed
+    </p>
+
+    <button type="button" data-archive-reset>
+      Reset Filters
+    </button>
+
+  </div>
+
+</section>
+
+        <section class="page-heading">
+            <p class="section-label">ARCHIVE DIVISION · ACCESS RECORD 0100</p>
+            <h1>The Archive</h1>
+            <p>
+                Every creature leaves a trace.
+                Every object has a history.
+                Every story has a record.
+            </p>
+        </section>
+
+        <section class="journal-entry">
+            <h2>About This Collection</h2>
+            <p>
+                The Archive preserves reports of unusual creatures,
+                extraordinary objects, unexplained events, and
+                historical accounts from across the Known World
+                and beyond.
+            </p>
+
+            <p>
+                Some records contain physical evidence.
+                Others contain nothing more than a name,
+                a drawing, or a witness who refuses to forget.
+            </p>
+        </section>
+
+<!-- ARCHIVE RECORD COLLECTION -->
+
+<section data-archive-container>
+
+  <div data-archive-list class="destination-grid">
+
+    <!-- RECORD 001 -->
+
+    <article
+      class="destination-card"
+      data-archive-item
+      data-title="The Hollow Stag"
+      data-category="entity"
+      data-status="unconfirmed"
+      data-description="A tall forest-dwelling creature reported near abandoned woodland paths."
+      data-keywords="deer antlers forest creature shadow"
+    >
+
+      <p class="section-label">ENTITY RECORD 001</p>
+
+      <h3>The Hollow Stag</h3>
+
+      <p>
+        A figure reported between the trees of several
+        abandoned woodland paths. Witness descriptions
+        remain inconsistent.
+      </p>
+
+      <span class="status-label">UNCONFIRMED</span>
+
+    </article>
+
+
+    <!-- RECORD 002 -->
+
+    <article
+      class="destination-card"
+      data-archive-item
+      data-title="The Mourning Bell"
+      data-category="artifact"
+      data-status="disputed"
+      data-description="An antique bell associated with unexplained sounds and conflicting historical accounts."
+      data-keywords="bell antique object sound artifact"
+    >
+
+      <p class="section-label">ARTIFACT RECORD 002</p>
+
+      <h3>The Mourning Bell</h3>
+
+      <p>
+        An antique object surrounded by conflicting accounts
+        of unusual sounds and unexplained appearances.
+      </p>
+
+      <span class="status-label">DISPUTED</span>
+
+    </article>
+
+
+    <!-- RECORD 003 -->
+
+    <article
+      class="destination-card"
+      data-archive-item
+      data-title="Blackwater Crossing"
+      data-category="location"
+      data-status="unresolved"
+      data-description="A reported crossing where travelers describe unusual changes in distance and direction."
+      data-keywords="river bridge location crossing geography"
+    >
+
+      <p class="section-label">LOCATION RECORD 003</p>
+
+      <h3>Blackwater Crossing</h3>
+
+      <p>
+        A location appearing in fragmented expedition notes.
+        Its geographical position has not been established.
+      </p>
+
+      <span class="status-label">UNRESOLVED</span>
+
+    </article>
+
+  </div>
+
+
+  <p data-archive-empty hidden>
+    No matching records were found. Try changing your filters.
+  </p>
+
+</section>
+
+        <section class="destination-grid">
+
+            <a href="entities.html" class="destination-card">
+                <span>01</span>
+                <h2>Entities</h2>
+                <p>Creatures, beings, and unidentified lifeforms.</p>
+            </a>
+
+            <a href="artifacts.html" class="destination-card">
+                <span>02</span>
+                <h2>Artifacts</h2>
+                <p>Objects with unusual origins or reported properties.</p>
+            </a>
+
+            <a href="case-files.html" class="destination-card">
+                <span>03</span>
+                <h2>Case Files</h2>
+                <p>Investigations, encounters, and field reports.</p>
+            </a>
+
+            <a href="historical-records.html" class="destination-card">
+                <span>04</span>
+                <h2>Historical Records</h2>
+                <p>Forgotten events, old accounts, and recovered documents.</p>
+            </a>
+
+            <a href="phenomena.html" class="destination-card">
+                <span>05</span>
+                <h2>Phenomena</h2>
+                <p>Unexplained occurrences and unusual observations.</p>
+            </a>
+
+            <a href="classified-index.html" class="destination-card">
+                <span>06</span>
+                <h2>Classified Index</h2>
+                <p>Disputed, restricted, and incomplete records.</p>
+            </a>
+
+            <a href="researchers.html" class="destination-card">
+                <span>07</span>
+                <h2>Researchers</h2>
+                <p>Those who investigate, document, and preserve.</p>
+            </a>
+
+            <a href="record.html" class="destination-card">
+                <span>08</span>
+                <h2>Individual Records</h2>
+                <p>Explore a single entry from the collection.</p>
+            </a>
+
+        </section>
+
+        <section class="journal-entry">
+            <h2>Archive Notice</h2>
+            <blockquote>
+                A record is not a conclusion.
+                It is simply what we know at the time of writing.
+            </blockquote>
+            <p>
+                New evidence may alter an existing record.
+                Previous interpretations are preserved rather than erased.
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <a href="../../index.html">Return to the Gateway</a>
+        <p>ARCHIVE DIVISION · NOCTURNE</p>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listening Room | AFTERHOURS</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body data-page="listening-room">
+
+    <header class="site-header">
+        <a href="../../index.html" class="logo">✧ NOCTURNE</a>
+
+        <nav class="main-navigation">
+            <a href="../../index.html">Gateway</a>
+            <a href="afterhours.html">Afterhours</a>
+            <a href="music-library.html">Music Library</a>
+            <a href="playlists.html">Playlists</a>
+        </nav>
+    </header>
+
+    <main class="page-container">
+
+        <section class="page-heading">
+            <p class="section-label">PRIVATE LISTENING SPACE · 0206</p>
+            <h1>The Listening Room</h1>
+            <p>Close the door. Let the recordings speak.</p>
+        </section>
+
+        <section class="journal-entry">
+            <h2>Welcome to the Listening Room</h2>
+            <p>
+                This space is reserved for exploring the audio
+                collection, listening to recordings, and discovering
+                the stories connected to each sound.
+            </p>
+        </section>
+
+        <section class="journal-entry audio-player-section">
+
+            <p class="status-label">FEATURED RECORDING</p>
+
+            <h2>Where the Shadows Gather</h2>
+
+            <p>
+                An original dark ambient concept recording.
+                The audio file has not yet been added.
+            </p>
+
+            <audio controls preload="none">
+                <source src="../../assets/audio/shadows-gather.mp3" type="audio/mpeg">
+                Your browser does not support audio playback.
+            </audio>
+
+            <p class="form-note">
+                Audio will become playable after the corresponding
+                file is added to the assets/audio folder.
+            </p>
+
+        </section>
+
+        <section class="journal-entry audio-player-section">
+
+            <p class="status-label">FEATURED SOUNDSCAPE</p>
+
+            <h2>The Hollowing Woods</h2>
+
+            <p>
+                An imagined forest atmosphere featuring wind,
+                distant movement, and unexplained sounds.
+            </p>
+
+            <audio controls preload="none">
+                <source src="../../assets/audio/hollowing-woods.mp3" type="audio/mpeg">
+                Your browser does not support audio playback.
+            </audio>
+
+        </section>
+
+        <section class="journal-entry">
+            <h2>Listening Notes</h2>
+
+            <form class="contact-form">
+
+                <label for="recording-name">Recording</label>
+                <input type="text" id="recording-name"
+                    placeholder="Which recording are you listening to?">
+
+                <label for="listening-notes">Observations</label>
+                <textarea id="listening-notes" rows="6"
+                    placeholder="Write down what you hear..."></textarea>
+
+                <button type="button" id="save-listening-note">
+                    Save Local Note
+                </button>
+
+                <p id="listening-note-status" class="form-note">
+                    Notes will be stored locally in this browser
+                    once JavaScript is connected.
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <a href="afterhours.html">Return to Afterhours</a>
+        <p>NOCTURNE · LISTENING ROOM</p>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+
+</body>
+</html>

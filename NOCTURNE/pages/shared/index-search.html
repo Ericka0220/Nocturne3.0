@@ -1,0 +1,196 @@
+]
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Network Index | NOCTURNE</title>
+
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+
+    <a href="../../index.html" class="logo">
+      NOCTURNE
+    </a>
+
+    <nav class="main-navigation">
+      <a href="../../index.html">Gateway</a>
+      <a href="../archive/archive.html">Archive</a>
+      <a href="../realm/realm.html">Realm</a>
+      <a href="../grimoire/grimoire.html">Grimoire</a>
+      <a href="../unwritten/unwritten.html">The Unwritten</a>
+    </nav>
+
+  </header>
+
+
+  <main class="page-container">
+
+    <section class="page-heading">
+
+      <p class="section-label">
+        CENTRAL NETWORK DIRECTORY
+      </p>
+
+      <h1>Network Index</h1>
+
+      <p>
+        Every name leaves a trace. Every discovery becomes a record.
+        Search the known archive and follow the evidence.
+      </p>
+
+    </section>
+
+
+    <section class="journal-entry">
+
+      <p class="section-label">
+        ARCHIVE SEARCH TERMINAL
+      </p>
+
+      <h2>What are you looking for?</h2>
+
+      <p>
+        Search for entities, artifacts, locations, phenomena,
+        researchers, investigations, and more.
+      </p>
+
+
+      <form id="globalSearchForm" class="global-search-form">
+
+        <label for="globalSearchInput">
+          SEARCH THE NETWORK
+        </label>
+
+        <input
+          type="search"
+          id="globalSearchInput"
+          name="q"
+          placeholder="Enter a name, subject, or keyword..."
+          autocomplete="off"
+        >
+
+        <label for="searchCategory">
+          ARCHIVE CATEGORY
+        </label>
+
+        <select id="searchCategory" name="category">
+
+          <option value="all">All Categories</option>
+          <option value="Archive">Archive</option>
+          <option value="Entities">Entities</option>
+          <option value="Artifacts">Artifacts</option>
+          <option value="Case Files">Case Files</option>
+          <option value="History">History</option>
+          <option value="Phenomena">Phenomena</option>
+          <option value="Locations">Locations</option>
+          <option value="Expeditions">Expeditions</option>
+          <option value="Magic">Magic</option>
+          <option value="Observatory">Observatory</option>
+          <option value="The Unwritten">The Unwritten</option>
+          <option value="People">People</option>
+          <option value="Organization">Organization</option>
+
+        </select>
+
+        <div class="search-actions">
+
+          <button type="submit" class="primary-link">
+            Search Records
+          </button>
+
+          <button type="button" id="clearSearch">
+            Clear Search
+          </button>
+
+        </div>
+
+      </form>
+
+    </section>
+
+
+    <section class="search-results-section">
+
+      <div class="search-results-heading">
+
+        <h2>Search Results</h2>
+
+        <p id="searchResultCount">
+          0 records found
+        </p>
+
+      </div>
+
+      <div
+        id="globalSearchResults"
+        class="search-results-grid"
+        aria-live="polite"
+        aria-atomic="false"
+      >
+
+        <p class="search-empty-message">
+          Enter a search term to explore the archive.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <section class="journal-entry">
+
+      <p class="section-label">
+        ARCHIVIST'S NOTE
+      </p>
+
+      <h2>Before You Search</h2>
+
+      <p>
+        Not every record is complete. Some accounts contradict
+        one another. Others have been lost, misclassified, or
+        deliberately withheld.
+      </p>
+
+      <p>
+        A search result is a path toward information, not proof
+        that every account contained within is true.
+      </p>
+
+      <p class="handwritten-note">
+        "The archive does not contain everything.
+        It only contains what someone thought to preserve."
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+
+    <p>
+      NOCTURNE: THE VEIL NETWORK
+    </p>
+
+    <p>
+      There is more to the world.
+    </p>
+
+    <p>
+      © <span data-current-year></span> NOCTURNE
+    </p>
+
+  </footer>
+
+
+  <script src="../../js/script.js"></script>
+
+</body>
+</html>
